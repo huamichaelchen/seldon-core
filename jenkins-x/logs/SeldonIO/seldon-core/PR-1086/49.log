@@ -1,0 +1,22 @@
+
+Showing logs for build [32mseldonio-seldon-core-pr-1086-in-vw9nw-49[0m stage [32mend-to-end[0m and container [32mstep-credential-initializer-5ww2v[0m
+{"level":"warn","ts":1573505096.762205,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1573505096.7627654,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mseldonio-seldon-core-pr-1086-in-vw9nw-49[0m stage [32mend-to-end[0m and container [32mstep-working-dir-initializer-np2h6[0m
+{"level":"warn","ts":1573505097.8585968,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1573505097.8602898,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source\""}
+
+Showing logs for build [32mseldonio-seldon-core-pr-1086-in-vw9nw-49[0m stage [32mend-to-end[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mseldonio-seldon-core-pr-1086-in-vw9nw-49[0m stage [32mend-to-end[0m and container [32mstep-git-source-seldonio-seldon-core-pr-1086-in-crdk2[0m
+{"level":"warn","ts":1573505105.9760146,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1573505109.0530424,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/SeldonIO/seldon-core.git @ master in path /workspace/source"}
+
+Showing logs for build [32mseldonio-seldon-core-pr-1086-in-vw9nw-49[0m stage [32mend-to-end[0m and container [32mstep-git-merge[0m
+failed to try resolving symlinks in path "/var/log/pods/**_seldonio-seldon-core-pr-1086-in-vw9nw-49-end-to-end-6sh7n-pod-08b4e5_1e4a80cd-04c4-11ea-ac53-42010a9a0049/step-git-merge/0.log": lstat /var/log/pods/**_seldonio-seldon-core-pr-1086-in-vw9nw-49-end-to-end-6sh7n-pod-08b4e5_1e4a80cd-04c4-11ea-ac53-42010a9a0049/step-git-merge/0.log: no such file or directory
+
+Showing logs for build [32mseldonio-seldon-core-pr-1086-in-vw9nw-49[0m stage [32mend-to-end[0m and container [32mstep-test-end-to-end[0m
+Unable to retrieve container logs for docker://2bcaf2447a2f21668dd916e7369bbfdcd75ac7af216c566c8dd5f851dda4dac5
+[31m
+Pipeline failed on stage 'end-to-end' : container 'step-test-end-to-end'. The execution of the pipeline has stopped.[0m
