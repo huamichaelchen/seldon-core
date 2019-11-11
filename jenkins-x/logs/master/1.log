@@ -1,0 +1,2 @@
+Showing logs for build seldonio-seldon-core-master--1 stage python-lint-task and container step-credential-initializer-gbqng
+{"level":"warn","ts":1573213550.9096558,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
