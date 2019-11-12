@@ -1,0 +1,22 @@
+
+Showing logs for build [32mseldonio-seldon-core-pr-1086-in-kfhs5-64[0m stage [32mend-to-end[0m and container [32mstep-credential-initializer-vvxkm[0m
+{"level":"warn","ts":1573541637.3863106,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1573541637.388917,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mseldonio-seldon-core-pr-1086-in-kfhs5-64[0m stage [32mend-to-end[0m and container [32mstep-working-dir-initializer-5fj4j[0m
+{"level":"warn","ts":1573541637.8875706,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1573541637.889071,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source\""}
+
+Showing logs for build [32mseldonio-seldon-core-pr-1086-in-kfhs5-64[0m stage [32mend-to-end[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mseldonio-seldon-core-pr-1086-in-kfhs5-64[0m stage [32mend-to-end[0m and container [32mstep-git-source-seldonio-seldon-core-pr-1086-in-dqphx[0m
+{"level":"warn","ts":1573541646.1179886,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1573541649.283627,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/SeldonIO/seldon-core.git @ master in path /workspace/source"}
+
+Showing logs for build [32mseldonio-seldon-core-pr-1086-in-kfhs5-64[0m stage [32mend-to-end[0m and container [32mstep-git-merge[0m
+Unable to retrieve container logs for docker://4d9b37fe7cd93f9453873c3a24a612cd9bf75dd9ec8c30d0376772de2b474bf6
+
+Showing logs for build [32mseldonio-seldon-core-pr-1086-in-kfhs5-64[0m stage [32mend-to-end[0m and container [32mstep-test-end-to-end[0m
+Unable to retrieve container logs for docker://967228f55c6663781f2fa76df66d16b905d0ea79e348f2a5a439045575dd7c74
+[31m
+Pipeline failed on stage 'end-to-end' : container 'step-test-end-to-end'. The execution of the pipeline has stopped.[0m
