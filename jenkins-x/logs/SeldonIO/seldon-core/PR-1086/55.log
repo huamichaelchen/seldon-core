@@ -1,0 +1,71 @@
+
+Showing logs for build [32mseldonio-seldon-core-pr-1086-in-vl276-55[0m stage [32mend-to-end[0m and container [32mstep-credential-initializer-rjcw8[0m
+{"level":"warn","ts":1573538719.0715415,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1573538719.0720217,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mseldonio-seldon-core-pr-1086-in-vl276-55[0m stage [32mend-to-end[0m and container [32mstep-working-dir-initializer-tb7vp[0m
+{"level":"warn","ts":1573538720.4823234,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1573538720.4842067,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source\""}
+
+Showing logs for build [32mseldonio-seldon-core-pr-1086-in-vl276-55[0m stage [32mend-to-end[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mseldonio-seldon-core-pr-1086-in-vl276-55[0m stage [32mend-to-end[0m and container [32mstep-git-source-seldonio-seldon-core-pr-1086-in-892n9[0m
+{"level":"warn","ts":1573538727.9701176,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1573538731.1333706,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/SeldonIO/seldon-core.git @ master in path /workspace/source"}
+
+Showing logs for build [32mseldonio-seldon-core-pr-1086-in-vl276-55[0m stage [32mend-to-end[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:32710b10e7e690afac85b795bb1647bfd44f3246,1086:adf933c22428a3bb3dbd420d3ccfa993dfb78a74
+DEBUG: ran git fetch --unshallow origin adf933c22428a3bb3dbd420d3ccfa993dfb78a74: 32710b10e7e690afac85b795bb1647bfd44f3246: in 
+DEBUG: ran git checkout master in 
+DEBUG: ran git reset --hard 32710b10e7e690afac85b795bb1647bfd44f3246 in 
+DEBUG: ran clean --force -d . in 
+DEBUG: ran git merge adf933c22428a3bb3dbd420d3ccfa993dfb78a74 in 
+Merged SHA adf933c22428a3bb3dbd420d3ccfa993dfb78a74 with commit message 'Added networking config' into base branch master
+Merged SHA 73c9077cd0e5131911b4b0d10e67355d7eee2e34 with commit message 'Removed logging from request loops' into base branch master
+Merged SHA 65b69609b927e15279d9e4e4a58332603e956f37 with commit message 'Moved prints to logs and added extra guards on namespace creation' into base branch master
+Merged SHA 3f56f3bafefefc426f27a3e315224ca6787f7e12 with commit message 'Added less cores' into base branch master
+Merged SHA 366741c2d308db9917e747c9c227962bf20e1182 with commit message 'Added requests' into base branch master
+Merged SHA 66763501a16ef20b31f80a53e16b44bb53e07c4c with commit message 'Removed concurrent tests' into base branch master
+Merged SHA a68f8b50f54adc66fa463f3b2a754335fafbd7a1 with commit message 'Added parallel execution of python tests' into base branch master
+Merged SHA cf65e7e061b4487ac42d0884c5b5be688437e23d with commit message 'Merge remote-tracking branch 'upstream/master' into 1032_improve_speed_e2e_tests' into base branch master
+Merged SHA 1344da41d73f4fbb594267a68f58073e3865cde2 with commit message 'Merge remote-tracking branch 'upstream/master' into 1032_improve_speed_e2e_tests' into base branch master
+Merged SHA 06fabef79519ace1930f8facd436e2aeb100fc69 with commit message 'Updated script to run when files are modified and show modified files' into base branch master
+Merged SHA 8c725514e678e8e947a18d2a99a13ef7f5c2335b with commit message 'Added multithreading by default' into base branch master
+Merged SHA df0b07df97b53da5d678dae678b02c9944843b3c with commit message 'Removed commented code' into base branch master
+Merged SHA 611c19a230b1ddf6082afb5f7e23b92a0ed79274 with commit message 'Updated for linter' into base branch master
+Merged SHA 4d071cc378eda3b9d9bbd83ff573882606b85ce0 with commit message 'Updated kind script to only run builds for images that have been updated' into base branch master
+Merged SHA 9d9c93754dfc08ab9806f899e0dcb2f4dd7ed617 with commit message 'Re-added make dependencies' into base branch master
+Merged SHA 285e0588f7a1529ca44321228a86a5b308e3ce39 with commit message 'Added wait before initial request' into base branch master
+Merged SHA 16a3dd6c4071e06c8d6fb6821f65b0a1c5cb3bfa with commit message 'Fixed helm charts' into base branch master
+Merged SHA a0bca4342b82f2f4dbf35d863f78eb96bc995784 with commit message 'Added limits to ensure enough memory for kube system' into base branch master
+Merged SHA cf6d0550c3a1dc4943fc1db93c703e14a77811ed with commit message 'Changed make to have optional number of workers' into base branch master
+Merged SHA 2680d01877efdb49963ca0f4035841f8cb14f71f with commit message 'Updated to support retries on apply' into base branch master
+Merged SHA 3231b979ec764565a6a40725cd936df58ebd8be5 with commit message 'Updated to support retries on apply' into base branch master
+Merged SHA e90be22afe26e719df061e96f9886cb66fc58235 with commit message 'Updated conftest typo' into base branch master
+Merged SHA b06b9cd5aec3afed32a34d3acf6cfbc9ddbec541 with commit message 'Cleaned and fixed namespaces' into base branch master
+Merged SHA 945847d81bf3c8e59f1f170b59b9faca1b490a6d with commit message 'Added unique namespace per test' into base branch master
+Merged SHA 6337728287bf24a5a49f085946fb47e264edb14d with commit message 'Testing parallel tests' into base branch master
+
+Showing logs for build [32mseldonio-seldon-core-pr-1086-in-vl276-55[0m stage [32mend-to-end[0m and container [32mstep-test-end-to-end[0m
+Starting Docker: docker.
+[SETUP] Waiting for Docker to be ready, sleeping for 1 seconds ...
+kind create cluster --config kind_config.yaml
+Creating cluster "kind" ...
+ • Ensuring node image (kindest/node:v1.15.3) 🖼  ...
+ ✓ Ensuring node image (kindest/node:v1.15.3) 🖼
+ • Preparing nodes 📦📦  ...
+time="06:06:37" level=error msg=858523dc2c2662c432425a483ad292e152ae0b154866a7babfd6d2a7c8c5b2c1
+time="06:06:37" level=error msg="docker: Error response from daemon: driver failed programming external connectivity on endpoint kind-control-plane (9700173f5e330bf9fca16917e3fa3e0f285a49251e972c9ae1bc854f541d3700): Error starting userland proxy: listen tcp 1.0.0.1:26443: bind: cannot assign requested address."
+ ✗ Preparing nodes 📦📦
+time="06:06:37" level=error msg="docker run error: exit status 125"
+Error: failed to create cluster: docker run error: exit status 125
+Makefile:6: recipe for target 'kind_create_cluster' failed
+make: *** [kind_create_cluster] Error 1
+kind delete cluster
+Error: unknown cluster "kind"
+Makefile:9: recipe for target 'kind_delete_cluster' failed
+make: *** [kind_delete_cluster] Error 1
+Stopping Docker: dockerProgram process in pidfile '/var/run/docker-ssd.pid', 1 process(es), refused to die.
+kind_test_all.sh: line 95: TEST_EXIT_VALUE: unbound variable
+[31m
+Pipeline failed on stage 'end-to-end' : container 'step-test-end-to-end'. The execution of the pipeline has stopped.[0m
