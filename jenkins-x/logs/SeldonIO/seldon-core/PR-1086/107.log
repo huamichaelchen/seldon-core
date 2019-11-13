@@ -1,0 +1,86 @@
+
+Showing logs for build [32mseldonio-seldon-core-pr-1086-li-zw7d4-107[0m stage [32mpython-lint-task[0m and container [32mstep-credential-initializer-ghrcl[0m
+{"level":"warn","ts":1573662893.0593762,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1573662893.0597284,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mseldonio-seldon-core-pr-1086-li-zw7d4-107[0m stage [32mpython-lint-task[0m and container [32mstep-working-dir-initializer-m7gs5[0m
+{"level":"warn","ts":1573662893.5621622,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1573662893.5636427,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source\""}
+
+Showing logs for build [32mseldonio-seldon-core-pr-1086-li-zw7d4-107[0m stage [32mpython-lint-task[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mseldonio-seldon-core-pr-1086-li-zw7d4-107[0m stage [32mpython-lint-task[0m and container [32mstep-git-source-seldonio-seldon-core-pr-1086-li-lpb72[0m
+{"level":"warn","ts":1573662900.7151551,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1573662903.9122756,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/SeldonIO/seldon-core.git @ master in path /workspace/source"}
+
+Showing logs for build [32mseldonio-seldon-core-pr-1086-li-zw7d4-107[0m stage [32mpython-lint-task[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:1c51f8ed9f8ff5f36c29c70a85520e20a1f53889,1086:cc865bc737780ed2153ae96caa325a6e009c658c
+DEBUG: ran git fetch --unshallow origin cc865bc737780ed2153ae96caa325a6e009c658c: 1c51f8ed9f8ff5f36c29c70a85520e20a1f53889: in 
+DEBUG: ran git checkout master in 
+DEBUG: ran git reset --hard 1c51f8ed9f8ff5f36c29c70a85520e20a1f53889 in 
+DEBUG: ran clean --force -d . in 
+DEBUG: ran git merge cc865bc737780ed2153ae96caa325a6e009c658c in 
+Merged SHA 93da34ac21be41b0eaa941b12ff679cba8802f84 with commit message 'Merge commit 'cc865bc737780ed2153ae96caa325a6e009c658c'' into base branch master
+Merged SHA cc865bc737780ed2153ae96caa325a6e009c658c with commit message 'Separated s2i tests from the rest' into base branch master
+Merged SHA b1df57d540e7ce9b4e551e70f2f1637c949ac520 with commit message 'Separated s2i tests from the rest' into base branch master
+Merged SHA 7f50210bd8e43d6d94f5bd11021cbd25380fd778 with commit message 'Added lower attempts and lower cores' into base branch master
+Merged SHA 1abde693819497676d39bc222a6c0abb9422711f with commit message 'Updated prepackaged model' into base branch master
+Merged SHA 6f85ebd7fb717f7e5d463aad370de39b4c210d1a with commit message 'Updated pods to pass all tests' into base branch master
+Merged SHA b6fe47a9be8df4a558c0dbc239b90b56eda3ee30 with commit message 'Updated pods info' into base branch master
+Merged SHA 10a9c8c6bf304fb52890454d36a13917146d6940 with commit message 'Adding explicit run of script on background' into base branch master
+Merged SHA f211d0dd81e6ac8762c2f7ca8a68425768cce0f2 with commit message 'Added support for initial requests with data' into base branch master
+Merged SHA b44b0382737e4d438be23ed8f8ba445fab656491 with commit message 'Added support for initial requests with data' into base branch master
+Merged SHA 125e92544dd8b4d948a3b840a1de0e676afc03a5 with commit message 'Added support for initial requests with data' into base branch master
+Merged SHA 1aa5727339156dd3a733f4fbef1693c6e7f750ba with commit message 'Added initial rest request' into base branch master
+Merged SHA b7238cb072cb3eb551ffbb9c3de447cd8b3a1674 with commit message 'Updated testing scripts' into base branch master
+Merged SHA 8322dfff8020cab956e1c767adcd42702f6ec626 with commit message 'Disabling s2i tests' into base branch master
+Merged SHA 1b2cf7c1598a800643027eb3388547e98019b0a9 with commit message 'Disabling CNI' into base branch master
+Merged SHA 95f1f68e014ba4c813d3d54b229a3b43a2a5d80f with commit message 'Removing networking' into base branch master
+Merged SHA 9b5b9d736486bc2cda82c45043a62b9a9d45195a with commit message 'Added networking config' into base branch master
+Merged SHA adf933c22428a3bb3dbd420d3ccfa993dfb78a74 with commit message 'Added networking config' into base branch master
+Merged SHA 73c9077cd0e5131911b4b0d10e67355d7eee2e34 with commit message 'Removed logging from request loops' into base branch master
+Merged SHA 65b69609b927e15279d9e4e4a58332603e956f37 with commit message 'Moved prints to logs and added extra guards on namespace creation' into base branch master
+Merged SHA 3f56f3bafefefc426f27a3e315224ca6787f7e12 with commit message 'Added less cores' into base branch master
+Merged SHA 366741c2d308db9917e747c9c227962bf20e1182 with commit message 'Added requests' into base branch master
+Merged SHA 66763501a16ef20b31f80a53e16b44bb53e07c4c with commit message 'Removed concurrent tests' into base branch master
+Merged SHA a68f8b50f54adc66fa463f3b2a754335fafbd7a1 with commit message 'Added parallel execution of python tests' into base branch master
+Merged SHA cf65e7e061b4487ac42d0884c5b5be688437e23d with commit message 'Merge remote-tracking branch 'upstream/master' into 1032_improve_speed_e2e_tests' into base branch master
+Merged SHA 1344da41d73f4fbb594267a68f58073e3865cde2 with commit message 'Merge remote-tracking branch 'upstream/master' into 1032_improve_speed_e2e_tests' into base branch master
+Merged SHA 06fabef79519ace1930f8facd436e2aeb100fc69 with commit message 'Updated script to run when files are modified and show modified files' into base branch master
+Merged SHA 8c725514e678e8e947a18d2a99a13ef7f5c2335b with commit message 'Added multithreading by default' into base branch master
+Merged SHA df0b07df97b53da5d678dae678b02c9944843b3c with commit message 'Removed commented code' into base branch master
+Merged SHA 611c19a230b1ddf6082afb5f7e23b92a0ed79274 with commit message 'Updated for linter' into base branch master
+Merged SHA 4d071cc378eda3b9d9bbd83ff573882606b85ce0 with commit message 'Updated kind script to only run builds for images that have been updated' into base branch master
+Merged SHA 9d9c93754dfc08ab9806f899e0dcb2f4dd7ed617 with commit message 'Re-added make dependencies' into base branch master
+Merged SHA 285e0588f7a1529ca44321228a86a5b308e3ce39 with commit message 'Added wait before initial request' into base branch master
+Merged SHA 16a3dd6c4071e06c8d6fb6821f65b0a1c5cb3bfa with commit message 'Fixed helm charts' into base branch master
+Merged SHA a0bca4342b82f2f4dbf35d863f78eb96bc995784 with commit message 'Added limits to ensure enough memory for kube system' into base branch master
+Merged SHA cf6d0550c3a1dc4943fc1db93c703e14a77811ed with commit message 'Changed make to have optional number of workers' into base branch master
+Merged SHA 2680d01877efdb49963ca0f4035841f8cb14f71f with commit message 'Updated to support retries on apply' into base branch master
+Merged SHA 3231b979ec764565a6a40725cd936df58ebd8be5 with commit message 'Updated to support retries on apply' into base branch master
+Merged SHA e90be22afe26e719df061e96f9886cb66fc58235 with commit message 'Updated conftest typo' into base branch master
+Merged SHA b06b9cd5aec3afed32a34d3acf6cfbc9ddbec541 with commit message 'Cleaned and fixed namespaces' into base branch master
+Merged SHA 945847d81bf3c8e59f1f170b59b9faca1b490a6d with commit message 'Added unique namespace per test' into base branch master
+Merged SHA 6337728287bf24a5a49f085946fb47e264edb14d with commit message 'Testing parallel tests' into base branch master
+
+Showing logs for build [32mseldonio-seldon-core-pr-1086-li-zw7d4-107[0m stage [32mpython-lint-task[0m and container [32mstep-python-lint[0m
+make: Entering directory '/workspace/source/python'
+pip install black==19.3b0
+Collecting black==19.3b0
+  Downloading https://files.pythonhosted.org/packages/30/62/cf549544a5fe990bbaeca21e9c419501b2de7a701ab0afb377bc81676600/black-19.3b0-py36-none-any.whl (89kB)
+Collecting toml>=0.9.4
+  Downloading https://files.pythonhosted.org/packages/a2/12/ced7105d2de62fa7c8fb5fce92cc4ce66b57c95fb875e9318dba7f8c5db0/toml-0.10.0-py2.py3-none-any.whl
+Collecting click>=6.5
+  Downloading https://files.pythonhosted.org/packages/fa/37/45185cb5abbc30d7257104c434fe0b07e5a195a6847506c074527aa599ec/Click-7.0-py2.py3-none-any.whl (81kB)
+Collecting attrs>=18.1.0
+  Downloading https://files.pythonhosted.org/packages/a2/db/4313ab3be961f7a763066401fb77f7748373b6094076ae2bda2806988af6/attrs-19.3.0-py2.py3-none-any.whl
+Collecting appdirs
+  Downloading https://files.pythonhosted.org/packages/56/eb/810e700ed1349edde4cbdc1b2a21e28cdf115f9faf263f6bbf8447c1abf3/appdirs-1.4.3-py2.py3-none-any.whl
+Installing collected packages: toml, click, attrs, appdirs, black
+Successfully installed appdirs-1.4.3 attrs-19.3.0 black-19.3b0 click-7.0 toml-0.10.0
+black \
+	--check ./ ../testing \
+	--exclude "(testing/scripts/proto|seldon_core/proto/|.eggs|.tox)"
+All done! ✨ 🍰 ✨
+48 files would be left unchanged.
+make: Leaving directory '/workspace/source/python'
