@@ -1,0 +1,120 @@
+
+Showing logs for build [32mmeta-seldonio-seldon-core-pr-10-ffkwg-9[0m stage [32mmeta-pipeline[0m and container [32mstep-credential-initializer-l22nz[0m
+{"level":"warn","ts":1573744823.1003041,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1573744823.1008089,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mmeta-seldonio-seldon-core-pr-10-ffkwg-9[0m stage [32mmeta-pipeline[0m and container [32mstep-working-dir-initializer-64rbr[0m
+{"level":"warn","ts":1573744824.4584153,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1573744824.459624,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source\""}
+
+Showing logs for build [32mmeta-seldonio-seldon-core-pr-10-ffkwg-9[0m stage [32mmeta-pipeline[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mmeta-seldonio-seldon-core-pr-10-ffkwg-9[0m stage [32mmeta-pipeline[0m and container [32mstep-git-source-meta-seldonio-seldon-core-pr-10-fzh5h[0m
+{"level":"warn","ts":1573744832.6053898,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1573744836.3058457,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/SeldonIO/seldon-core.git @ d185edca3bca3509d3148544bf7df74dda5340d6 in path /workspace/source"}
+
+Showing logs for build [32mmeta-seldonio-seldon-core-pr-10-ffkwg-9[0m stage [32mmeta-pipeline[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:d185edca3bca3509d3148544bf7df74dda5340d6,1098:30095c34db8393cd71df39f3c22b1a572900c082
+DEBUG: ran git fetch --unshallow origin 30095c34db8393cd71df39f3c22b1a572900c082: d185edca3bca3509d3148544bf7df74dda5340d6: in 
+DEBUG: ran git checkout master in 
+DEBUG: ran git reset --hard d185edca3bca3509d3148544bf7df74dda5340d6 in 
+DEBUG: ran clean --force -d . in 
+error: error during merge: merging 30095c34db8393cd71df39f3c22b1a572900c082 into master: git output: Auto-merging engine/pom.xml
+Auto-merging doc/source/python/python_component.md
+CONFLICT (content): Merge conflict in doc/source/python/python_component.md
+Automatic merge failed; fix conflicts and then commit the result.: failed to run 'git merge 30095c34db8393cd71df39f3c22b1a572900c082' command in directory '', output: 'Auto-merging engine/pom.xml
+Auto-merging doc/source/python/python_component.md
+CONFLICT (content): Merge conflict in doc/source/python/python_component.md
+Automatic merge failed; fix conflicts and then commit the result.'
+[31m
+Pipeline failed on stage 'meta-pipeline' : container 'step-git-merge'. The execution of the pipeline has stopped.[0m
+
+Showing logs for build [32mmeta-seldonio-seldon-core-pr-10-ffkwg-9[0m stage [32mmeta-pipeline[0m and container [32mstep-credential-initializer-l22nz[0m
+{"level":"warn","ts":1573744823.1003041,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1573744823.1008089,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mmeta-seldonio-seldon-core-pr-10-ffkwg-9[0m stage [32mmeta-pipeline[0m and container [32mstep-working-dir-initializer-64rbr[0m
+{"level":"warn","ts":1573744824.4584153,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1573744824.459624,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source\""}
+
+Showing logs for build [32mmeta-seldonio-seldon-core-pr-10-ffkwg-9[0m stage [32mmeta-pipeline[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mmeta-seldonio-seldon-core-pr-10-ffkwg-9[0m stage [32mmeta-pipeline[0m and container [32mstep-git-source-meta-seldonio-seldon-core-pr-10-fzh5h[0m
+{"level":"warn","ts":1573744832.6053898,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1573744836.3058457,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/SeldonIO/seldon-core.git @ d185edca3bca3509d3148544bf7df74dda5340d6 in path /workspace/source"}
+
+Showing logs for build [32mmeta-seldonio-seldon-core-pr-10-ffkwg-9[0m stage [32mmeta-pipeline[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:d185edca3bca3509d3148544bf7df74dda5340d6,1098:30095c34db8393cd71df39f3c22b1a572900c082
+DEBUG: ran git fetch --unshallow origin 30095c34db8393cd71df39f3c22b1a572900c082: d185edca3bca3509d3148544bf7df74dda5340d6: in 
+DEBUG: ran git checkout master in 
+DEBUG: ran git reset --hard d185edca3bca3509d3148544bf7df74dda5340d6 in 
+DEBUG: ran clean --force -d . in 
+error: error during merge: merging 30095c34db8393cd71df39f3c22b1a572900c082 into master: git output: Auto-merging engine/pom.xml
+Auto-merging doc/source/python/python_component.md
+CONFLICT (content): Merge conflict in doc/source/python/python_component.md
+Automatic merge failed; fix conflicts and then commit the result.: failed to run 'git merge 30095c34db8393cd71df39f3c22b1a572900c082' command in directory '', output: 'Auto-merging engine/pom.xml
+Auto-merging doc/source/python/python_component.md
+CONFLICT (content): Merge conflict in doc/source/python/python_component.md
+Automatic merge failed; fix conflicts and then commit the result.'
+[31m
+Pipeline failed on stage 'meta-pipeline' : container 'step-git-merge'. The execution of the pipeline has stopped.[0m
+
+Showing logs for build [32mmeta-seldonio-seldon-core-pr-10-ffkwg-9[0m stage [32mmeta-pipeline[0m and container [32mstep-credential-initializer-l22nz[0m
+{"level":"warn","ts":1573744823.1003041,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1573744823.1008089,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mmeta-seldonio-seldon-core-pr-10-ffkwg-9[0m stage [32mmeta-pipeline[0m and container [32mstep-working-dir-initializer-64rbr[0m
+{"level":"warn","ts":1573744824.4584153,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1573744824.459624,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source\""}
+
+Showing logs for build [32mmeta-seldonio-seldon-core-pr-10-ffkwg-9[0m stage [32mmeta-pipeline[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mmeta-seldonio-seldon-core-pr-10-ffkwg-9[0m stage [32mmeta-pipeline[0m and container [32mstep-git-source-meta-seldonio-seldon-core-pr-10-fzh5h[0m
+{"level":"warn","ts":1573744832.6053898,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1573744836.3058457,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/SeldonIO/seldon-core.git @ d185edca3bca3509d3148544bf7df74dda5340d6 in path /workspace/source"}
+
+Showing logs for build [32mmeta-seldonio-seldon-core-pr-10-ffkwg-9[0m stage [32mmeta-pipeline[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:d185edca3bca3509d3148544bf7df74dda5340d6,1098:30095c34db8393cd71df39f3c22b1a572900c082
+DEBUG: ran git fetch --unshallow origin 30095c34db8393cd71df39f3c22b1a572900c082: d185edca3bca3509d3148544bf7df74dda5340d6: in 
+DEBUG: ran git checkout master in 
+DEBUG: ran git reset --hard d185edca3bca3509d3148544bf7df74dda5340d6 in 
+DEBUG: ran clean --force -d . in 
+error: error during merge: merging 30095c34db8393cd71df39f3c22b1a572900c082 into master: git output: Auto-merging engine/pom.xml
+Auto-merging doc/source/python/python_component.md
+CONFLICT (content): Merge conflict in doc/source/python/python_component.md
+Automatic merge failed; fix conflicts and then commit the result.: failed to run 'git merge 30095c34db8393cd71df39f3c22b1a572900c082' command in directory '', output: 'Auto-merging engine/pom.xml
+Auto-merging doc/source/python/python_component.md
+CONFLICT (content): Merge conflict in doc/source/python/python_component.md
+Automatic merge failed; fix conflicts and then commit the result.'
+[31m
+Pipeline failed on stage 'meta-pipeline' : container 'step-git-merge'. The execution of the pipeline has stopped.[0m
+
+Showing logs for build [32mmeta-seldonio-seldon-core-pr-10-ffkwg-9[0m stage [32mmeta-pipeline[0m and container [32mstep-credential-initializer-l22nz[0m
+{"level":"warn","ts":1573744823.1003041,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1573744823.1008089,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mmeta-seldonio-seldon-core-pr-10-ffkwg-9[0m stage [32mmeta-pipeline[0m and container [32mstep-working-dir-initializer-64rbr[0m
+{"level":"warn","ts":1573744824.4584153,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1573744824.459624,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source\""}
+
+Showing logs for build [32mmeta-seldonio-seldon-core-pr-10-ffkwg-9[0m stage [32mmeta-pipeline[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mmeta-seldonio-seldon-core-pr-10-ffkwg-9[0m stage [32mmeta-pipeline[0m and container [32mstep-git-source-meta-seldonio-seldon-core-pr-10-fzh5h[0m
+{"level":"warn","ts":1573744832.6053898,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1573744836.3058457,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/SeldonIO/seldon-core.git @ d185edca3bca3509d3148544bf7df74dda5340d6 in path /workspace/source"}
+
+Showing logs for build [32mmeta-seldonio-seldon-core-pr-10-ffkwg-9[0m stage [32mmeta-pipeline[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:d185edca3bca3509d3148544bf7df74dda5340d6,1098:30095c34db8393cd71df39f3c22b1a572900c082
+DEBUG: ran git fetch --unshallow origin 30095c34db8393cd71df39f3c22b1a572900c082: d185edca3bca3509d3148544bf7df74dda5340d6: in 
+DEBUG: ran git checkout master in 
+DEBUG: ran git reset --hard d185edca3bca3509d3148544bf7df74dda5340d6 in 
+DEBUG: ran clean --force -d . in 
+error: error during merge: merging 30095c34db8393cd71df39f3c22b1a572900c082 into master: git output: Auto-merging engine/pom.xml
+Auto-merging doc/source/python/python_component.md
+CONFLICT (content): Merge conflict in doc/source/python/python_component.md
+Automatic merge failed; fix conflicts and then commit the result.: failed to run 'git merge 30095c34db8393cd71df39f3c22b1a572900c082' command in directory '', output: 'Auto-merging engine/pom.xml
+Auto-merging doc/source/python/python_component.md
+CONFLICT (content): Merge conflict in doc/source/python/python_component.md
+Automatic merge failed; fix conflicts and then commit the result.'
+[31m
+Pipeline failed on stage 'meta-pipeline' : container 'step-git-merge'. The execution of the pipeline has stopped.[0m
