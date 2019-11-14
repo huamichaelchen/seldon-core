@@ -1,0 +1,55 @@
+
+Showing logs for build [32mseldonio-seldon-core-pr-1082-li-x47nm-22[0m stage [32mpython-lint-task[0m and container [32mstep-credential-initializer-km7qm[0m
+{"level":"warn","ts":1573744858.3787005,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1573744858.379148,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mseldonio-seldon-core-pr-1082-li-x47nm-22[0m stage [32mpython-lint-task[0m and container [32mstep-working-dir-initializer-pn46g[0m
+{"level":"warn","ts":1573744858.789446,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1573744858.790756,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source\""}
+
+Showing logs for build [32mseldonio-seldon-core-pr-1082-li-x47nm-22[0m stage [32mpython-lint-task[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mseldonio-seldon-core-pr-1082-li-x47nm-22[0m stage [32mpython-lint-task[0m and container [32mstep-git-source-seldonio-seldon-core-pr-1082-li-b8m6m[0m
+{"level":"warn","ts":1573744868.8498316,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1573744872.2201033,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/SeldonIO/seldon-core.git @ master in path /workspace/source"}
+
+Showing logs for build [32mseldonio-seldon-core-pr-1082-li-x47nm-22[0m stage [32mpython-lint-task[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:d185edca3bca3509d3148544bf7df74dda5340d6,1082:34e52815efd3eeec89a5c6e543436a54bd853560
+DEBUG: ran git fetch --unshallow origin 34e52815efd3eeec89a5c6e543436a54bd853560: d185edca3bca3509d3148544bf7df74dda5340d6: in 
+DEBUG: ran git checkout master in 
+DEBUG: ran git reset --hard d185edca3bca3509d3148544bf7df74dda5340d6 in 
+DEBUG: ran clean --force -d . in 
+DEBUG: ran git merge 34e52815efd3eeec89a5c6e543436a54bd853560 in 
+Merged SHA ad6dc73a7676b29cddbdae1da412da0fdce8b4a7 with commit message 'Merge commit '34e52815efd3eeec89a5c6e543436a54bd853560'' into base branch master
+Merged SHA 34e52815efd3eeec89a5c6e543436a54bd853560 with commit message 'Merge branch 'master' into 607_adding_json' into base branch master
+Merged SHA 137dd914a85beb4aa569f176411c437c4ac49b84 with commit message 'Added tests for microservice' into base branch master
+Merged SHA 29a05085fdc7f0068f80d2f046011ab69d926e5f with commit message 'added functionality for explainer' into base branch master
+Merged SHA 59aa74694d18b9f04096b58e5cca228bc8d65471 with commit message 'Added tests for grpc' into base branch master
+Merged SHA 361c3a5bd000d1296b656651314e61f8d73a4d48 with commit message 'Adding GRPC support for client' into base branch master
+Merged SHA 33438447f0dbfd6518d68759cb9c5ca5c44c9f07 with commit message 'Added test for ambassadoor rest' into base branch master
+Merged SHA 6750c5519519b0e009eedf8dd88a43203fb5a7bb with commit message 'Updated to support json_data' into base branch master
+Merged SHA b3b006dde206d39ef27fd49c3586087d2959f1ca with commit message 'Merge remote-tracking branch 'upstream/master' into 607_adding_json' into base branch master
+Merged SHA cc2fd0758f4f7d68432b9a7d32ec37e31351f4ec with commit message 'Added to microservice' into base branch master
+Merged SHA ffe6af9182a3d5481b9220c446c2b0be8034d4e4 with commit message 'Updated functions to support json_data' into base branch master
+
+Showing logs for build [32mseldonio-seldon-core-pr-1082-li-x47nm-22[0m stage [32mpython-lint-task[0m and container [32mstep-python-lint[0m
+make: Entering directory '/workspace/source/python'
+pip install black==19.3b0
+Collecting black==19.3b0
+  Downloading https://files.pythonhosted.org/packages/30/62/cf549544a5fe990bbaeca21e9c419501b2de7a701ab0afb377bc81676600/black-19.3b0-py36-none-any.whl (89kB)
+Collecting toml>=0.9.4
+  Downloading https://files.pythonhosted.org/packages/a2/12/ced7105d2de62fa7c8fb5fce92cc4ce66b57c95fb875e9318dba7f8c5db0/toml-0.10.0-py2.py3-none-any.whl
+Collecting appdirs
+  Downloading https://files.pythonhosted.org/packages/56/eb/810e700ed1349edde4cbdc1b2a21e28cdf115f9faf263f6bbf8447c1abf3/appdirs-1.4.3-py2.py3-none-any.whl
+Collecting attrs>=18.1.0
+  Downloading https://files.pythonhosted.org/packages/a2/db/4313ab3be961f7a763066401fb77f7748373b6094076ae2bda2806988af6/attrs-19.3.0-py2.py3-none-any.whl
+Collecting click>=6.5
+  Downloading https://files.pythonhosted.org/packages/fa/37/45185cb5abbc30d7257104c434fe0b07e5a195a6847506c074527aa599ec/Click-7.0-py2.py3-none-any.whl (81kB)
+Installing collected packages: toml, appdirs, attrs, click, black
+Successfully installed appdirs-1.4.3 attrs-19.3.0 black-19.3b0 click-7.0 toml-0.10.0
+black \
+	--check ./ ../testing \
+	--exclude "(testing/scripts/proto|seldon_core/proto/|.eggs|.tox)"
+All done! ✨ 🍰 ✨
+48 files would be left unchanged.
+make: Leaving directory '/workspace/source/python'
