@@ -1,0 +1,57 @@
+
+Showing logs for build [32mseldonio-seldon-core-pr-1026-li-lqsxj-10[0m stage [32mpython-lint-task[0m and container [32mstep-credential-initializer-7qngg[0m
+{"level":"warn","ts":1573732139.9963102,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1573732140.0100875,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mseldonio-seldon-core-pr-1026-li-lqsxj-10[0m stage [32mpython-lint-task[0m and container [32mstep-working-dir-initializer-t9bnz[0m
+{"level":"warn","ts":1573732148.239045,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1573732148.2515464,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source\""}
+
+Showing logs for build [32mseldonio-seldon-core-pr-1026-li-lqsxj-10[0m stage [32mpython-lint-task[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mseldonio-seldon-core-pr-1026-li-lqsxj-10[0m stage [32mpython-lint-task[0m and container [32mstep-git-source-seldonio-seldon-core-pr-1026-li-n6c7b[0m
+{"level":"warn","ts":1573732156.9286137,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1573732160.5361767,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/SeldonIO/seldon-core.git @ master in path /workspace/source"}
+
+Showing logs for build [32mseldonio-seldon-core-pr-1026-li-lqsxj-10[0m stage [32mpython-lint-task[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:1d6c461c1917d4b45b9526e75c99b0b2372324f7,1026:51ff940283589f4039d14041a71b87e47b03c22a
+DEBUG: ran git fetch --unshallow origin 51ff940283589f4039d14041a71b87e47b03c22a: 1d6c461c1917d4b45b9526e75c99b0b2372324f7: in 
+DEBUG: ran git checkout master in 
+DEBUG: ran git reset --hard 1d6c461c1917d4b45b9526e75c99b0b2372324f7 in 
+DEBUG: ran clean --force -d . in 
+DEBUG: ran git merge 51ff940283589f4039d14041a71b87e47b03c22a in 
+Merged SHA 407e3cc5b93779b0a029fc2603a9da87fd517bcf with commit message 'Merge commit '51ff940283589f4039d14041a71b87e47b03c22a'' into base branch master
+Merged SHA 51ff940283589f4039d14041a71b87e47b03c22a with commit message 'Add a line about reliability and container stress' into base branch master
+Merged SHA b4f9b41b59edf505f9b8e6f9cc4a04ee067c526c with commit message 'Merge branch 'add_health' of github.com:kparaju/seldon-core into add_health' into base branch master
+Merged SHA 137bf680d482862185f337c4935ce8ef9f1d1507 with commit message 'Add documentation about how to replace the liveness and readiness probes' into base branch master
+Merged SHA c1962beec04126fdb0874851c426dfc98b6ff5b2 with commit message 'Merge branch 'master' into add_health' into base branch master
+Merged SHA 605a4ce7fb61d2476d42fd808776f6c385ae3367 with commit message 'Merge branch 'master' into add_health' into base branch master
+Merged SHA 3483b118ba4e4cbe8bcad19b9dc98759a7e9336a with commit message 'Add health_status_raw to Low level methods' into base branch master
+Merged SHA 76de5e3f2af9a811f492e13be38849c80b461ac6 with commit message 'Add documentation' into base branch master
+Merged SHA d8fcf7139b4f0eb3988e227771b22718c917a720 with commit message 'Black formatting' into base branch master
+Merged SHA 5f9f915cb050e8ae9d6c78b60f11e9b5bb7f6f7c with commit message 'Merge remote-tracking branch 'upstream/master' into add_health' into base branch master
+Merged SHA 51b6fbec0cdd6bcb06b96ec917e1d2adc9dab481 with commit message 'Add tests' into base branch master
+Merged SHA e5f231859d7c2167dcbe0dda45069513db98d48e with commit message 'Fix indent bug' into base branch master
+Merged SHA 0c7072eea6fb432a92adbe589ef6edb03453ea4a with commit message 'Add /health/ping and /health/status to Python REST microservice' into base branch master
+
+Showing logs for build [32mseldonio-seldon-core-pr-1026-li-lqsxj-10[0m stage [32mpython-lint-task[0m and container [32mstep-python-lint[0m
+make: Entering directory '/workspace/source/python'
+pip install black==19.3b0
+Collecting black==19.3b0
+  Downloading https://files.pythonhosted.org/packages/30/62/cf549544a5fe990bbaeca21e9c419501b2de7a701ab0afb377bc81676600/black-19.3b0-py36-none-any.whl (89kB)
+Collecting attrs>=18.1.0
+  Downloading https://files.pythonhosted.org/packages/a2/db/4313ab3be961f7a763066401fb77f7748373b6094076ae2bda2806988af6/attrs-19.3.0-py2.py3-none-any.whl
+Collecting click>=6.5
+  Downloading https://files.pythonhosted.org/packages/fa/37/45185cb5abbc30d7257104c434fe0b07e5a195a6847506c074527aa599ec/Click-7.0-py2.py3-none-any.whl (81kB)
+Collecting appdirs
+  Downloading https://files.pythonhosted.org/packages/56/eb/810e700ed1349edde4cbdc1b2a21e28cdf115f9faf263f6bbf8447c1abf3/appdirs-1.4.3-py2.py3-none-any.whl
+Collecting toml>=0.9.4
+  Downloading https://files.pythonhosted.org/packages/a2/12/ced7105d2de62fa7c8fb5fce92cc4ce66b57c95fb875e9318dba7f8c5db0/toml-0.10.0-py2.py3-none-any.whl
+Installing collected packages: attrs, click, appdirs, toml, black
+Successfully installed appdirs-1.4.3 attrs-19.3.0 black-19.3b0 click-7.0 toml-0.10.0
+black \
+	--check ./ ../testing \
+	--exclude "(testing/scripts/proto|seldon_core/proto/|.eggs|.tox)"
+All done! ✨ 🍰 ✨
+48 files would be left unchanged.
+make: Leaving directory '/workspace/source/python'
