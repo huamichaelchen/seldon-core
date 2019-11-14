@@ -1,0 +1,54 @@
+
+Showing logs for build [32mseldonio-seldon-core-pr-1098-li-rgf9s-10[0m stage [32mpython-lint-task[0m and container [32mstep-credential-initializer-5v6bh[0m
+{"level":"warn","ts":1573745034.1111434,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1573745034.1119535,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mseldonio-seldon-core-pr-1098-li-rgf9s-10[0m stage [32mpython-lint-task[0m and container [32mstep-working-dir-initializer-h2pf6[0m
+{"level":"warn","ts":1573745035.0038617,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1573745035.0082462,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source\""}
+
+Showing logs for build [32mseldonio-seldon-core-pr-1098-li-rgf9s-10[0m stage [32mpython-lint-task[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mseldonio-seldon-core-pr-1098-li-rgf9s-10[0m stage [32mpython-lint-task[0m and container [32mstep-git-source-seldonio-seldon-core-pr-1098-li-w8jnc[0m
+{"level":"warn","ts":1573745044.636671,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1573745052.0486188,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/SeldonIO/seldon-core.git @ master in path /workspace/source"}
+
+Showing logs for build [32mseldonio-seldon-core-pr-1098-li-rgf9s-10[0m stage [32mpython-lint-task[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:d185edca3bca3509d3148544bf7df74dda5340d6,1098:d2b75140caf6d86110bbe71bcb96deb955867e46
+DEBUG: ran git fetch --unshallow origin d2b75140caf6d86110bbe71bcb96deb955867e46: d185edca3bca3509d3148544bf7df74dda5340d6: in 
+DEBUG: ran git checkout master in 
+DEBUG: ran git reset --hard d185edca3bca3509d3148544bf7df74dda5340d6 in 
+DEBUG: ran clean --force -d . in 
+DEBUG: ran git merge d2b75140caf6d86110bbe71bcb96deb955867e46 in 
+Merged SHA d2b75140caf6d86110bbe71bcb96deb955867e46 with commit message 'Merge branch 'master' into fix-int-to-float' into base branch master
+Merged SHA 30095c34db8393cd71df39f3c22b1a572900c082 with commit message 'Document int-to-float behaviour' into base branch master
+Merged SHA 0122f7d782974884674a89f92a0a0a327494c41a with commit message 'Remove TODO comments' into base branch master
+Merged SHA 0f797086b8e8338afd285116b9df88b9ac7bcb13 with commit message 'Trim empty decimal part on floats as well' into base branch master
+Merged SHA 9ee687310b1587c9fa74546b3403ecf669a1011f with commit message 'Fix tests with previous behaviour' into base branch master
+Merged SHA 63ff6720bb55e460f651fb4665b9d267da06209c with commit message 'Don't print decimal part if empty' into base branch master
+Merged SHA a5699e9a44717bb1c85f2c0658ce3150e89825d6 with commit message 'Add tests around ProtoBufUtils serialisation of SeldonMessage' into base branch master
+Merged SHA e9a37419c5598f9cac4372f383a710a8a061e626 with commit message 'Add test for jsonData' into base branch master
+Merged SHA 8db334e22a9a3a0def119281855d4f8a3d490193 with commit message 'Add assertions to PredictionProto tests' into base branch master
+Merged SHA 24a53d662709570909acd8a22acf54e1435c2bb5 with commit message 'Couple of linting fixes' into base branch master
+
+Showing logs for build [32mseldonio-seldon-core-pr-1098-li-rgf9s-10[0m stage [32mpython-lint-task[0m and container [32mstep-python-lint[0m
+make: Entering directory '/workspace/source/python'
+pip install black==19.3b0
+Collecting black==19.3b0
+  Downloading https://files.pythonhosted.org/packages/30/62/cf549544a5fe990bbaeca21e9c419501b2de7a701ab0afb377bc81676600/black-19.3b0-py36-none-any.whl (89kB)
+Collecting appdirs
+  Downloading https://files.pythonhosted.org/packages/56/eb/810e700ed1349edde4cbdc1b2a21e28cdf115f9faf263f6bbf8447c1abf3/appdirs-1.4.3-py2.py3-none-any.whl
+Collecting attrs>=18.1.0
+  Downloading https://files.pythonhosted.org/packages/a2/db/4313ab3be961f7a763066401fb77f7748373b6094076ae2bda2806988af6/attrs-19.3.0-py2.py3-none-any.whl
+Collecting click>=6.5
+  Downloading https://files.pythonhosted.org/packages/fa/37/45185cb5abbc30d7257104c434fe0b07e5a195a6847506c074527aa599ec/Click-7.0-py2.py3-none-any.whl (81kB)
+Collecting toml>=0.9.4
+  Downloading https://files.pythonhosted.org/packages/a2/12/ced7105d2de62fa7c8fb5fce92cc4ce66b57c95fb875e9318dba7f8c5db0/toml-0.10.0-py2.py3-none-any.whl
+Installing collected packages: appdirs, attrs, click, toml, black
+Successfully installed appdirs-1.4.3 attrs-19.3.0 black-19.3b0 click-7.0 toml-0.10.0
+black \
+	--check ./ ../testing \
+	--exclude "(testing/scripts/proto|seldon_core/proto/|.eggs|.tox)"
+All done! ✨ 🍰 ✨
+48 files would be left unchanged.
+make: Leaving directory '/workspace/source/python'
