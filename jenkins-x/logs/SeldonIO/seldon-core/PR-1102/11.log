@@ -1,0 +1,52 @@
+
+Showing logs for build [32mseldonio-seldon-core-pr-1102-li-98tkh-11[0m stage [32mpython-lint-task[0m and container [32mstep-credential-initializer-m4szc[0m
+{"level":"warn","ts":1573829853.1142275,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1573829853.1148665,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mseldonio-seldon-core-pr-1102-li-98tkh-11[0m stage [32mpython-lint-task[0m and container [32mstep-working-dir-initializer-kcsbn[0m
+{"level":"warn","ts":1573829854.575618,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1573829854.5805192,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source\""}
+
+Showing logs for build [32mseldonio-seldon-core-pr-1102-li-98tkh-11[0m stage [32mpython-lint-task[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mseldonio-seldon-core-pr-1102-li-98tkh-11[0m stage [32mpython-lint-task[0m and container [32mstep-git-source-seldonio-seldon-core-pr-1102-li-24f9k[0m
+{"level":"warn","ts":1573829863.7657673,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1573829866.9841654,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/SeldonIO/seldon-core.git @ master in path /workspace/source"}
+
+Showing logs for build [32mseldonio-seldon-core-pr-1102-li-98tkh-11[0m stage [32mpython-lint-task[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:976bcdd3586d07b0fecb927e71f971d1ba6af00d,1102:dc1207dabfb02070423bd82765a0fb3653108c07
+DEBUG: ran git fetch --unshallow origin dc1207dabfb02070423bd82765a0fb3653108c07: 976bcdd3586d07b0fecb927e71f971d1ba6af00d: in 
+DEBUG: ran git checkout master in 
+DEBUG: ran git reset --hard 976bcdd3586d07b0fecb927e71f971d1ba6af00d in 
+DEBUG: ran clean --force -d . in 
+DEBUG: ran git merge dc1207dabfb02070423bd82765a0fb3653108c07 in 
+Merged SHA 75857086fe0839fb3c4fc65e390c4e7b77c28d50 with commit message 'Merge commit 'dc1207dabfb02070423bd82765a0fb3653108c07'' into base branch master
+Merged SHA dc1207dabfb02070423bd82765a0fb3653108c07 with commit message 'switch to bool' into base branch master
+Merged SHA 201b0fa849a173654a7693a0f5955f177bc6969c with commit message 'istio shadow notebook' into base branch master
+Merged SHA 8a3580741497a73f37aefa7eabbda12c40a0eca7 with commit message 'istio shadowing example in notebook' into base branch master
+Merged SHA 799dcb875a91c7470384eadba5731d0a71ed500e with commit message 'fix yaml fomatting' into base branch master
+Merged SHA 77e8f7a808cdd700b8361829287f4bc879ba165f with commit message 'shadow traffic going throug' into base branch master
+Merged SHA d203b1c2dc7e11e4c17894815be7443a88305ad2 with commit message 'try to just mirror by host not labels - not working yet (see TODO)' into base branch master
+Merged SHA 5bc080068a659ad6afce3ef62111f452e1c451dd with commit message 'no Service for the shadow' into base branch master
+
+Showing logs for build [32mseldonio-seldon-core-pr-1102-li-98tkh-11[0m stage [32mpython-lint-task[0m and container [32mstep-python-lint[0m
+make: Entering directory '/workspace/source/python'
+pip install black==19.3b0
+Collecting black==19.3b0
+  Downloading https://files.pythonhosted.org/packages/30/62/cf549544a5fe990bbaeca21e9c419501b2de7a701ab0afb377bc81676600/black-19.3b0-py36-none-any.whl (89kB)
+Collecting click>=6.5
+  Downloading https://files.pythonhosted.org/packages/fa/37/45185cb5abbc30d7257104c434fe0b07e5a195a6847506c074527aa599ec/Click-7.0-py2.py3-none-any.whl (81kB)
+Collecting toml>=0.9.4
+  Downloading https://files.pythonhosted.org/packages/a2/12/ced7105d2de62fa7c8fb5fce92cc4ce66b57c95fb875e9318dba7f8c5db0/toml-0.10.0-py2.py3-none-any.whl
+Collecting attrs>=18.1.0
+  Downloading https://files.pythonhosted.org/packages/a2/db/4313ab3be961f7a763066401fb77f7748373b6094076ae2bda2806988af6/attrs-19.3.0-py2.py3-none-any.whl
+Collecting appdirs
+  Downloading https://files.pythonhosted.org/packages/56/eb/810e700ed1349edde4cbdc1b2a21e28cdf115f9faf263f6bbf8447c1abf3/appdirs-1.4.3-py2.py3-none-any.whl
+Installing collected packages: click, toml, attrs, appdirs, black
+Successfully installed appdirs-1.4.3 attrs-19.3.0 black-19.3b0 click-7.0 toml-0.10.0
+black \
+	--check ./ ../testing \
+	--exclude "(testing/scripts/proto|seldon_core/proto/|.eggs|.tox)"
+All done! ✨ 🍰 ✨
+48 files would be left unchanged.
+make: Leaving directory '/workspace/source/python'
